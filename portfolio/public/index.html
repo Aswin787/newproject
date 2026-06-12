@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aswin | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── NAVBAR ─────────────────────────────── -->
+  <nav id="navbar">
+    <div class="logo">&#60;Aswin /&#62;</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about"    onclick="closeMobile()">About</a>
+    <a href="#projects" onclick="closeMobile()">Projects</a>
+    <a href="#skills"   onclick="closeMobile()">Skills</a>
+    <a href="#contact"  onclick="closeMobile()">Contact</a>
+  </div>
+
+  <!-- ── HERO ───────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">👋 Hello, I'm</p>
+      <h1>Aswin<span class="dot">.</span></h1>
+      <p class="hero-role">
+        <span class="typed" id="typedText"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-bio">
+        CSE Student crafting full-stack applications with Java, MERN Stack &amp; AWS Cloud.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact"  class="btn outline">Hire Me</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com"   target="_blank" title="GitHub">GH</a>
+        <a href="https://linkedin.com" target="_blank" title="LinkedIn">LI</a>
+        <a href="mailto:you@email.com" title="Email">✉</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="code-card">
+        <div class="code-dots"><span></span><span></span><span></span></div>
+        <pre><code><span class="c-key">const</span> <span class="c-var">dev</span> = {
+  name<span class="c-op">:</span> <span class="c-str">"Aswin"</span>,
+  role<span class="c-op">:</span> <span class="c-str">"Full-Stack Dev"</span>,
+  stack<span class="c-op">:</span> [
+    <span class="c-str">"Node.js"</span>, <span class="c-str">"Express"</span>,
+    <span class="c-str">"React"</span>, <span class="c-str">"MongoDB"</span>
+  ],
+  cloud<span class="c-op">:</span> <span class="c-str">"AWS"</span>,
+  open<span class="c-op">:</span> <span class="c-bool">true</span>
+};</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ──────────────────────────────── -->
+  <section id="about" class="fade-in">
+    <div class="section-header">
+      <span class="section-num">01.</span>
+      <h2>About Me</h2>
+      <div class="line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a <strong>Computer Science Engineering</strong> student from Coimbatore, India,
+          passionate about building scalable, user-centric applications.
+        </p>
+        <p>
+          My experience spans <strong>Java & Spring Boot</strong> on the backend,
+          <strong>React & Node.js</strong> for full-stack apps, and <strong>AWS Cloud</strong>
+          for deployment and infrastructure.
+        </p>
+        <p>
+          I love turning ideas into real products — from designing RESTful APIs to
+          deploying containerized apps on the cloud.
+        </p>
+        <ul class="about-list">
+          <li>🎓 B.E. Computer Science Engineering</li>
+          <li>📍 Coimbatore, Tamil Nadu, India</li>
+          <li>💼 Open to internships &amp; opportunities</li>
+          <li>🌐 Building full-stack &amp; cloud projects</li>
+        </ul>
+      </div>
+      <div class="about-img-wrap">
+        <div class="about-img-placeholder">A</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ───────────────────────────── -->
+  <section id="projects" class="fade-in">
+    <div class="section-header">
+      <span class="section-num">02.</span>
+      <h2>Projects</h2>
+      <div class="line"></div>
+    </div>
+    <div class="card-grid">
+
+      <div class="card">
+        <div class="card-top">
+          <span class="card-icon">📦</span>
+          <div class="card-links">
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Live ↗</a>
+          </div>
+        </div>
+        <h3>JayaService Ecosystem</h3>
+        <p>On-demand service platform with real-time tracking, Razorpay payments, and Socket.io live chat. Built with MERN stack and Expo for mobile.</p>
+        <div class="card-tags">
+          <span>React Native</span><span>Node.js</span><span>MongoDB</span><span>Socket.io</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="card-icon">🏋️</span>
+          <div class="card-links">
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Live ↗</a>
+          </div>
+        </div>
+        <h3>Gym Website</h3>
+        <p>Responsive landing page for a fitness center featuring membership plans, trainers section, and contact form with smooth scroll animations.</p>
+        <div class="card-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="card-icon">☁️</span>
+          <div class="card-links">
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Live ↗</a>
+          </div>
+        </div>
+        <h3>Cloud File Manager</h3>
+        <p>AWS S3-powered file manager with upload, download, and delete functionality. Secured with IAM roles and deployed on EC2.</p>
+        <div class="card-tags">
+          <span>AWS S3</span><span>EC2</span><span>Express</span><span>Node.js</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <span class="card-icon">🛒</span>
+          <div class="card-links">
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Live ↗</a>
+          </div>
+        </div>
+        <h3>E-Commerce REST API</h3>
+        <p>Full-featured REST API for e-commerce built with Spring Boot — products, orders, auth via JWT, and MySQL persistence.</p>
+        <div class="card-tags">
+          <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>JWT</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── SKILLS ─────────────────────────────── -->
+  <section id="skills" class="fade-in">
+    <div class="section-header">
+      <span class="section-num">03.</span>
+      <h2>Skills</h2>
+      <div class="line"></div>
+    </div>
+    <div class="skills-container">
+
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <div class="skills-grid">
+          <div class="skill-pill">Java</div>
+          <div class="skill-pill">JavaScript</div>
+          <div class="skill-pill">TypeScript</div>
+          <div class="skill-pill">HTML5</div>
+          <div class="skill-pill">CSS3</div>
+          <div class="skill-pill">SQL</div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Frameworks &amp; Libraries</h4>
+        <div class="skills-grid">
+          <div class="skill-pill">Node.js</div>
+          <div class="skill-pill">Express.js</div>
+          <div class="skill-pill">React</div>
+          <div class="skill-pill">Spring Boot</div>
+          <div class="skill-pill">React Native</div>
+          <div class="skill-pill">Expo</div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Cloud &amp; DevOps</h4>
+        <div class="skills-grid">
+          <div class="skill-pill">AWS EC2</div>
+          <div class="skill-pill">AWS S3</div>
+          <div class="skill-pill">Docker</div>
+          <div class="skill-pill">PM2</div>
+          <div class="skill-pill">Nginx</div>
+          <div class="skill-pill">Git</div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h4>Databases</h4>
+        <div class="skills-grid">
+          <div class="skill-pill">MongoDB</div>
+          <div class="skill-pill">MySQL</div>
+          <div class="skill-pill">PostgreSQL</div>
+          <div class="skill-pill">Redis</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────────── -->
+  <section id="contact" class="fade-in">
+    <div class="section-header">
+      <span class="section-num">04.</span>
+      <h2>Contact Me</h2>
+      <div class="line"></div>
+    </div>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h3>Let's work together 🚀</h3>
+        <p>
+          I'm currently open to internships, freelance projects, and full-time opportunities.
+          Drop me a message and I'll get back to you within 24 hours!
+        </p>
+        <div class="contact-detail"><span>📧</span> aswin@example.com</div>
+        <div class="contact-detail"><span>📍</span> Coimbatore, Tamil Nadu</div>
+        <div class="contact-detail"><span>💼</span> Open to work</div>
+      </div>
+      <div class="contact-form">
+        <div class="form-group">
+          <input type="text"  id="name"    placeholder="Your Name"    autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <input type="email" id="email"   placeholder="Your Email"   autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <input type="text"  id="subject" placeholder="Subject" />
+        </div>
+        <div class="form-group">
+          <textarea id="message" placeholder="Your Message..."></textarea>
+        </div>
+        <button class="btn primary full-width" id="sendBtn" onclick="sendMessage()">
+          Send Message ✉
+        </button>
+        <p id="form-status"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────── -->
+  <footer>
+    <p>Designed &amp; Built by <strong>Aswin</strong> · Powered by Node.js + Express</p>
+    <p class="footer-sub">© 2025 All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
