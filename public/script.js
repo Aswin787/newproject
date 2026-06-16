@@ -100,6 +100,8 @@ sections.forEach((s) => sectionObserver.observe(s));
 async function sendMessage() {
   const name    = document.getElementById('name')?.value.trim();
   const email   = document.getElementById('email')?.value.trim();
+  const phone   = document.getElementById('phone')?.value.trim();
+  const address = document.getElementById('address')?.value.trim();
   const subject = document.getElementById('subject')?.value.trim();
   const message = document.getElementById('message')?.value.trim();
   const status  = document.getElementById('form-status');
@@ -125,7 +127,7 @@ async function sendMessage() {
     const res = await fetch('/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, email, subject, message }),
+      body: JSON.stringify({ name, email, phone, address, subject, message }),
     });
 
     const data = await res.json();
@@ -133,7 +135,7 @@ async function sendMessage() {
     if (data.success) {
       setStatus('✅ Message sent! I\'ll get back to you soon.', 'var(--accent2)');
       // Clear form
-      ['name', 'email', 'subject', 'message'].forEach((id) => {
+      ['name', 'email', 'phone', 'address', 'subject', 'message'].forEach((id) => {
         const el = document.getElementById(id);
         if (el) el.value = '';
       });
